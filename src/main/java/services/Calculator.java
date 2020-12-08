@@ -48,7 +48,6 @@ public class Calculator {
 
 
     public int[] removeArrayElement(int[] array, int index) {
-        // delete the element at specified index and return the array
         return IntStream.range(0, array.length).filter(i -> i != index).map(i -> array[i]).toArray();
     }
 
