@@ -4,6 +4,10 @@ import java.util.Arrays;
 
 public class Calculator {
 
+    public long distinct(int[] list) {
+        return Arrays.stream(list).distinct().count();
+    }
+
     public int[] quickSort(int[] list) {
 
         if (list == null || list.length < 2) {
