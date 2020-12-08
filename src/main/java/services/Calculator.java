@@ -1,6 +1,7 @@
 package services;
 
 import java.util.Arrays;
+import java.util.Random;
 
 public class Calculator {
 
@@ -13,6 +14,9 @@ public class Calculator {
         if (list == null || list.length < 2) {
             return list;
         }
+
+        new Random().nextInt(list.length - 1);
+        changePlaces(list, list.length - 1, new Random().nextInt(list.length));
 
         int pivot = list[list.length - 1];
         int newSplitPoint = 0;
